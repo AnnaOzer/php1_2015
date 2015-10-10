@@ -6,4 +6,4 @@
  * Time: 13:19
  */
 
-phpinfo();
+echo 'TEST';
