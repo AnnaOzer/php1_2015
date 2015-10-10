@@ -1,9 +1,14 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Пользователь
- * Date: 10.10.2015
- * Time: 13:19
- */
 
-echo 'TEST';
+$news = [
+    [
+        'title'=>'Первая новость',
+        'text'=>'В лесу родилась ёлочка,',
+    ],
+    [
+        'title'=>'Вторая новость',
+        'text'=>'В лесу она росла...',
+    ],
+];
+
+include 'view/index.php';
