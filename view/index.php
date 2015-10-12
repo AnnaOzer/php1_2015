@@ -3,6 +3,7 @@
     <title>Новости</title>
 </head>
 <body>
+
     <?php
     foreach ($news as $article): ?>
     <article>

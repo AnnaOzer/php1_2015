@@ -16,6 +16,8 @@
 
 require_once __DIR__ . '/models/news.php';
 $news = News_getAll();
-
+?>
+<h1>Все главные новости</h1>
+<a href="index_adder.php">Добавить еще новость</a>
+<?php
 include 'view/index.php';
-include 'view/addform.php';
