@@ -14,3 +14,12 @@ function News_getAll()
         SELECT * FROM news
     ");
 }
+
+function publishArticle($article)
+{
+    $res = DBExec('
+    INSERT INTO `news`(`title`, `text`, `created`) VALUES (\''. $article['title'] .'\', \''. $article['text'] . '\', NOW())
+    ');
+
+    return $res;
+}

@@ -37,3 +37,15 @@ function DBQuery($sql)
     }
     return $ret;
 }
+
+function DBExec($sql){
+
+    DBConnect();
+
+    $res = mysql_query($sql);
+    if(false === $res) {
+        return false;
+    }
+    return true;
+
+}
