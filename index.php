@@ -1,6 +1,7 @@
 <?php
 
-$news = [
+/*
+ * $news = [
     [
         'title'=>'Первая новость',
         'text'=>'В лесу родилась ёлочка,',
@@ -10,5 +11,10 @@ $news = [
         'text'=>'В лесу она росла...',
     ],
 ];
+
+ * */
+
+require_once __DIR__ . '/models/news.php';
+$news = News_getAll();
 
 include 'view/index.php';
