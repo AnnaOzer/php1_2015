@@ -23,3 +23,10 @@ function publishArticle($article)
 
     return $res;
 }
+
+function getArticleByID($id)
+{
+    return DBQuery ('
+        SELECT * FROM `news` WHERE (`id`= \'' . $id . '\')
+    ');
+}
