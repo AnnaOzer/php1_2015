@@ -21,3 +21,4 @@ $news = News_getAll();
 <a href="index_adder.php">Добавить еще новость</a>
 <?php
 include 'view/index.php';
+include 'view/showoneform.php';
