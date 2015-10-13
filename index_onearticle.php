@@ -13,6 +13,7 @@ if(!empty($_GET)) {
     if(isset($_GET['id'])) {
         $news = getArticleByID($_GET['id']);
         if (!empty($news)) {
+            ?>Новость:<?php
             include 'view/index.php';
         } else {
             header('Location:/404.php');
