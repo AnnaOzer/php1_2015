@@ -8,3 +8,5 @@
 ?>
 I do nothing<br>
 editing.php
+<?php
+var_dump($_POST);
