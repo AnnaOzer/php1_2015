@@ -1,9 +1,9 @@
 <html>
 <head>
-    <title>Новость</title>
+    <title>Показать одну новость</title>
 </head>
 <body>
-    Показать одну новость
+    <h2>Показать одну новость</h2>
     <article>
         <h1><?=$article['title']; ?></h1>
         <div><?=$article['text']; ?></div>

@@ -17,5 +17,8 @@
         include '/view/editoneform.php';
     ?>
 
+
+    <h2><a href="/view/addform.php">Добавить новость</a></h2>
+
 </body>
 </html>
