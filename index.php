@@ -4,6 +4,8 @@ require_once __DIR__ . '/models/news.php';
 
 $news = News_getAll();
 
+include 'view/index_top.php';
+
 include 'view/index.php';
 
 include 'view/showoneform.php';
