@@ -10,9 +10,7 @@ require_once __DIR__ . '/models/news.php';
 
 if(!empty($_GET)) {
     if(isset($_GET['id'])) {
-        $news = getArticleByID($_GET['id']);
-        $toedit = $news[0];
-
+        $toedit = getArticleByID($_GET['id']);
         if (!empty($toedit)) {
 
 
@@ -27,4 +25,3 @@ if(!empty($_GET)) {
     header('Location:/index.php');
 }
 ?>
-<a href="/index.php">К списку всех новостей</a>

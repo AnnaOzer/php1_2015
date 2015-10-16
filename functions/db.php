@@ -49,3 +49,17 @@ function DBExec($sql){
     return true;
 
 }
+
+function DBQueryOne($sql)
+{
+    DBConnect();
+    $res = mysql_query($sql);
+
+    if(!$res) {
+        return[];
+    }
+
+    $row = mysql_fetch_assoc($res);
+
+    return $row;
+}

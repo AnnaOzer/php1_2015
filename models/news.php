@@ -26,7 +26,7 @@ function publishArticle($article)
 
 function getArticleByID($id)
 {
-    return DBQuery ('
+    return DBQueryOne ('
         SELECT * FROM `news` WHERE (`id`= \'' . $id . '\')
     ');
 }
